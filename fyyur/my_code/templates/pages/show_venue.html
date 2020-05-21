@@ -74,6 +74,38 @@
 		{% endfor %}
 	</div>
 </section>
+<a href="http://127.0.0.1:5000/venues/{{ venue.id }}/edit" class="btn btn-primary">Edit Venue here</a>
+<!--form class="form" method="post" action="/venues/{{venue.id}}/edit"-->
+<!--a id="del_btn" class="btn btn-primary" onclick="myFunction()" data-id="{{ venue.id }}">Delete Venue</a>
+<script>
+    const deleteBtns = document.querySelectorAll('.del_btn');
+	deleteBtns.onclick = function(e) {
+		const VenueId = e.target.dataset['id'];
+          fetch('/pages/home' + VenueId, {
+            method: 'DELETE'
+          });
+	}
+	document.getElementById("del_btn").onclick = myFunction()
+    function myFunction() {
+      fetch('/venue_aykalam/'+venue.id, { method: 'DELETE' });
+    }
+</script>
+	<a  class="btn btn-primary">Delete Venue here</a>
+	const venueId = e.target.dataset['id'];
+	const deleteBtn = document.querySelectorAll('.');
+     document.write("Deleted2");
 
+
+	 const deleteBtns = document.querySelectorAll('.delete-button');
+      for (let i = 0; i < deleteBtns.length; i++) {
+        const btn = deleteBtns[i];
+        btn.onclick = function(e) {
+          const todoId = e.target.dataset['id'];
+          fetch('/todos/' + todoId, {
+            method: 'DELETE'
+          });
+        }
+
+</form-->
 {% endblock %}
 

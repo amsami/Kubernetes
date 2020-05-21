@@ -40,7 +40,7 @@
 		{% endif %}
 	</div>
 	<div class="col-sm-6">
-		<img src="{{ artist.image_link }}" alt="Venue Image" />
+		<img src="{{ artist.image_link }}" alt="Artist Image" />
 	</div>
 </div>
 <section>
@@ -71,6 +71,6 @@
 		{% endfor %}
 	</div>
 </section>
-
+<a href="http://127.0.0.1:5000/artists/{{ artist.id }}/edit" class="btn btn-primary">Edit Artist here</a>
 {% endblock %}
 
