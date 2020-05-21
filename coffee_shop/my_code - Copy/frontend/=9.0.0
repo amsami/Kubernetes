@@ -1,8 +1,0 @@
-+ @angular/compiler-cli@7.2.16
-removed 13 packages, updated 3 packages and audited 1525 packages in 24.958s
-
-51 packages are looking for funding
-  run `npm fund` for details
-
-found 11 low severity vulnerabilities
-  run `npm audit fix` to fix them, or `npm audit` for details
